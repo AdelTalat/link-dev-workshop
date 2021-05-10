@@ -1,1 +1,13 @@
-<p>news-card works!</p>
+<div class="news-card-wrapper">
+    <div class="news-card-wrapper__card card">
+        <img [src]="cardInfo.urlToImage" class="news-card-wrapper__card__img card-img-top" alt="...">
+        <div class="news-card-wrapper__card__body card-body">
+            <div class="news-card-wrapper__card__body__actions">
+                <i></i>
+            </div>
+            <h5 class="news-card-wrapper__card-body-title card-title">{{ cardInfo.title }}</h5>
+            <p class="news-card-wrapper__card-body-text card-text">{{ cardInfo.description }}</p>
+            <a href="#" class="news-card-wrapper__card-body-date">{{ cardInfo.publishedAt | date }}</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+@mixin button($bg-color, $color) {
+  border: 1px solid $bg-color !important;
+  background-color:$bg-color;
+  color: $color !important;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background-color: $white !important;
+    color: $bg-color !important;
+    border: 1px solid $bg-color !important;
+  }
+}
+//blue white
+@mixin button-outline($bg-color, $color) { 
+  border: 1px solid $bg-color !important;
+  background-color:$color;
+  color: $bg-color !important;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background-color: $bg-color;
+    color: $color !important;
+    border: 1px solid $bg-color !important;
+  }
+}

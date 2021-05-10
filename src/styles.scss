@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+@import '../src/assets/styles/scss/base/typography';
+@import '../src/assets/styles/scss/utils/variables';
+@import '../src/assets/styles/scss/utils/mixins';
+@import '../src/assets/styles/scss/utils/helpers';
+@import '../src/assets/styles/scss/components/buttton';
+@import '../src/assets/styles/scss/components/header';
+@import '../src/assets/styles/scss/components/form';
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    display: block;
+    overflow-x: hidden;
+}
+
+:focus, .btn:active,
+.btn.focus, .btn:focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
+}

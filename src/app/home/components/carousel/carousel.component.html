@@ -1,0 +1,12 @@
+<div class="carousel-wrapper">
+  <carousel [isAnimated]="true">
+    <slide *ngFor="let slide of slider">
+      <img [src]="slide.img" [alt]="slide.header" style="display: block; width: 100%;">
+      <div class="carousel-caption d-none d-md-flex h-100 flex-column justify-content-center align-items-center align-content-center">
+        <h3 class="carousel-caption__slide-header mb-3">{{slide.header}}</h3>
+        <p class="carousel-caption__slide-text mb-5">{{slide.text}}</p>
+        <a [href]="slide.link" class="btn btn-green btn-lg carousel-caption__slide-link" >Donate Now</a>
+      </div>
+    </slide>
+  </carousel>
+</div>

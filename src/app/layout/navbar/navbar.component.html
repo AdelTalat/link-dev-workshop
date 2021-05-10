@@ -1,1 +1,45 @@
-<p>navbar works!</p>
+<nav class="main-navbar navbar navbar-expand-lg">
+    <div class="container">
+        <button class="btn btn-link" >
+            <img src="../../../assets/images/menu-icon.svg" alt="menu-button" />
+        </button>
+        <a class="navbar-brand ml-5" href="#">
+            <img src="../../../assets/images/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto align-items-center">
+            <li class="nav-item">
+                <button class="nav-link btn btn-link" href="#">
+                    <img src="../../../assets/images/search-icon.svg" class="main-navbar__nav-icon" alt="search-icon" />
+                </button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-link" href="#">
+                  <img src="../../../assets/images/notification-icon.svg" class="main-navbar__nav-icon" alt="notification-icon" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="../../../assets/images/user-img.jpg" class="main-navbar__nav-user-icon rounded-circle" alt="user-img" />
+                <span class="main-navbar__nav-user-name">User Name</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="nav-link dropdown-toggle btn btn-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="../../../assets/images/settings-icon.svg" class="main-navbar__nav-icon" alt="settings-icon" />
+              </button>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </div>
+</nav>

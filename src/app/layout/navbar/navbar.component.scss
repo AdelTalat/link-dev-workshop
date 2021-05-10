@@ -1,0 +1,45 @@
+@import '../../../assets/styles/scss/utils/variables';
+
+.main-navbar {
+    background-color: $main-turquoise;
+    padding: 2.74rem 1rem;
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                margin-right: 1rem;
+                margin-left: 1rem;
+            }
+            &:first-child {
+                .nav-link {
+                    padding-left: 0;
+                    margin-left: 0;
+                }
+            }
+            &:last-child {
+                .nav-link {
+                    padding-right: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &__nav-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    &__nav-user-icon {
+        width: 5rem;
+        height: 5rem;
+    }
+    &__nav-user-name {
+        color: $white;
+        margin-left: 1rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    .dropdown-toggle {
+        &::after {
+            display: none;
+        }
+    }
+}

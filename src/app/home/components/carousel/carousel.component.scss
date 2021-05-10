@@ -1,0 +1,122 @@
+::ng-deep .carousel-wrapper {
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                .item {
+                    max-height: 620px;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        background-color: rgba(117, 117, 117, 0.55);
+                    }
+                    .carousel-caption {
+                        right: 25%;
+                        left: 25%;
+                        @media (max-width: 767.98px) {
+                            text-align: center !important;
+                            right: 15%;
+                            left: 15%;
+                        }
+                        @media (max-width: 575.98px) {
+                          left: 5%;
+                          right: 5%;
+                        }
+                        &__slide-header {
+                            font-size: 6rem;
+                            font-weight: 600;
+                        }
+                        &__slide-text {
+                            font-size: 3.2rem;
+                            font-weight: 400;
+                        }
+                        &__slide-link {
+                            font-size: 2rem;
+                            font-weight: 400;
+                            padding: 1.26rem 1.7em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .carousel-indicators {
+        align-items: center;
+        li {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            &.active {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    .carousel-control {
+        &.carousel-control-prev {
+            @media (max-width: 575.98px) {
+              display: none
+            }
+            .carousel-control-prev-icon {
+              background-image: url("../../../../assets/images/icons/arrow-left.svg");
+              @media (max-width: 767.98px) {
+                width: 14px;
+              }
+              &::before {
+                content: "";
+                position: absolute;
+                background-color: rgba(251, 251, 251, 0.56);
+                display: inline;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                z-index: -1;
+                margin: auto;
+                width: 44px;
+                height: 44px;
+                @media (max-width: 767.98px) {
+                  width: 30px;
+                  height: 30px;
+                }
+              }
+            }
+            
+          }
+        &.carousel-control-next {
+        @media (max-width: 575.98px) {
+            display: none
+        }
+        .carousel-control-next-icon {
+            background-image: url("../../../../assets/images/icons/arrow-right.svg");
+            @media (max-width: 767.98px) {
+            width: 14px;
+            }
+            &::before {
+            content: "";
+            position: absolute;
+            background-color: rgba(251, 251, 251, 0.56);
+            display: inline;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            margin: auto;
+            width: 44px;
+            height: 44px;
+            @media (max-width: 767.98px) {
+                width: 30px;
+                height: 30px;
+            }
+            }
+        }
+        }
+    }
+}
