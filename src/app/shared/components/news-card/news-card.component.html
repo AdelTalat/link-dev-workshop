@@ -1,13 +1,17 @@
-<div class="news-card-wrapper">
-    <div class="news-card-wrapper__card card">
-        <img [src]="cardInfo.urlToImage" class="news-card-wrapper__card__img card-img-top" alt="...">
-        <div class="news-card-wrapper__card__body card-body">
-            <div class="news-card-wrapper__card__body__actions">
-                <i></i>
-            </div>
-            <h5 class="news-card-wrapper__card-body-title card-title">{{ cardInfo.title }}</h5>
-            <p class="news-card-wrapper__card-body-text card-text">{{ cardInfo.description }}</p>
-            <a href="#" class="news-card-wrapper__card-body-date">{{ cardInfo.publishedAt | date }}</a>
-        </div>
-    </div>
+<div class="news-card-wrapper card mb-5">
+  <img [src]="cardInfo.urlToImage" onerror="this.src='../../../../assets/images/carousel/carousel-1.jpg'" class="news-card-wrapper__img card-img-top" alt="news-img">
+  <div class="news-card-wrapper__body card-body d-flex justify-content-between flex-column">
+      <div class="news-card-wrapper__body__actions d-flex justify-content-end my-4">
+          <img src="../../../../assets/images/icons/like.svg" class="mr-3" alt="like-icon" />
+          <img src="../../../../assets/images/icons/share.svg"  alt="share-icon"/>
+      </div>
+      <h2 class="news-card-wrapper__body__title card-title">{{ cardInfo.title }}</h2>
+      <div class="news-card-wrapper__body__badges my-3">
+        <span class="news-card-wrapper__body__badges__badge badge badge-light bg-light-grey">News</span>
+      </div>
+      <p class="news-card-wrapper__body__text card-text">{{ cardInfo.description }}</p>
+      <p href="#" class="news-card-wrapper__body__date">
+        <img src="../../../../assets/images/icons/celender.svg" class="align-text-top" alt="calender-icon"/> {{ cardInfo.publishedAt | date: "fullDate" }}
+      </p>
+  </div>
 </div>

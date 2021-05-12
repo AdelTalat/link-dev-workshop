@@ -1,4 +1,4 @@
-<div class="latest-news-wrapper my-5">
+<div class="latest-news-wrapper">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -7,13 +7,13 @@
                 </header>
             </div>
             <div class="col d-flex align-items-center justify-content-end">
-                <a href="#" class="latest-news-wrapper__view-all btn btn-link text-green float-right">View All 
-                    <img src="../../../../assets//images/icons/arrow-link.svg">
+                <a href="#" class="latest-news-wrapper__view-all btn btn-link text-green float-right">View All
+                    <img src="../../../../assets//images/icons/arrow-link.svg" alt="arrow-icon">
                 </a>
             </div>
         </div>
         <div class="row">
-            <div class="col-4" *ngFor="let article of articles">
+            <div class="col-4" *ngFor="let article of articles | slice:0:6">
                 <app-news-card [article]='article'></app-news-card>
             </div>
         </div>
