@@ -1,0 +1,18 @@
+.form-control {
+  height: 4.8rem;
+}
+
+::-webkit-input-placeholder {
+  color: rgba($color: #000, $alpha: 0.5);
+  font-size: 1.4rem;
+}
+
+:-ms-input-placeholder {
+  color: rgba($color: #000, $alpha: 0.5);
+  font-size: 1.4rem;
+}
+
+::placeholder {
+  color: rgba($color: #000, $alpha: 0.5);
+  font-size: 1.4rem;
+}

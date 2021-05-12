@@ -1,0 +1,17 @@
+@import '../../../assets/styles/scss/utils/variables';
+.footer-wrapper {
+  background-color: $mid-light-grey;
+  &__link-item {
+    margin-bottom: 1rem;
+  }
+  &__link, &__text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $main-grey;
+  }
+  &__copyrights {
+    background-color: $main-turquoise;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+}
