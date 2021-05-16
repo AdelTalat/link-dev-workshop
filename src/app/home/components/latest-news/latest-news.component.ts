@@ -228,7 +228,7 @@ export class LatestNewsComponent implements OnInit {
         publishedAt: '2020-09-13T20:45:01Z',
         content: 'FILE – In this July 27, 2020, file photo, a nurse prepares a shot as a study of a possible COVID-19 vaccine in Binghamton, N.Y. (AP Photo/Hans Pennink, File)\r\nOAN NewsroomUPDATED 1:45 PM PT Sunday, S… [+1124 chars]'
     }
-]
+  ];
   constructor() { }
 
   ngOnInit() {

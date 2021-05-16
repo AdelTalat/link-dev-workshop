@@ -4,7 +4,10 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { NewsCardComponent } from './components/news-card/news-card.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 const sharedComponents = [
         PageNotFoundComponent,
@@ -16,8 +19,11 @@ const sharedComponents = [
   declarations: [...sharedComponents],
   imports: [
     CommonModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    RouterModule,
+    FormsModule,
+    HttpClientModule
   ],
-  exports: [...sharedComponents, CarouselModule]
+  exports: [...sharedComponents, CarouselModule, BsDatepickerModule]
 })
 export class SharedModule { }

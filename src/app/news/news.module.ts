@@ -8,6 +8,8 @@ import { RelatedTopicsComponent } from './components/related-topics/related-topi
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { NewsListingComponent } from './views/news-listing/news-listing.component';
 import { DetailsPageComponent } from './views/details-page/details-page.component';
+import { SharedModule } from '../shared/shared.module';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { DetailsPageComponent } from './views/details-page/details-page.componen
   ],
   imports: [
     CommonModule,
-    NewsRoutingModule
+    NewsRoutingModule,
+    SharedModule,
+    BsDatepickerModule.forRoot(),
   ]
 })
 export class NewsModule { }

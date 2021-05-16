@@ -1,1 +1,19 @@
-<p>news-listing works!</p>
+<app-breadcrumb></app-breadcrumb>
+
+<div class="latest-news-wrapper">
+  <div class="container">
+      <div class="row">
+          <div class="col">
+              <header class="header-wrapper mt-1">
+                  <h1 class="header-wrapper__heading">News</h1>
+              </header>
+          </div>
+      </div>
+      <app-search></app-search>
+      <div class="row">
+          <div class="col-4" *ngFor="let article of articles | slice:0:6">
+              <app-news-card [article]='article'></app-news-card>
+          </div>
+      </div>
+  </div>
+</div>

@@ -2,7 +2,7 @@
 @import "~@ng-select/ng-select/themes/default.theme.css";
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
-@import '../src/assets/styles/scss/base/typography';
+// @import '../src/assets/styles/scss/base/typography';
 @import '../src/assets/styles/scss/utils/variables';
 @import '../src/assets/styles/scss/utils/mixins';
 @import '../src/assets/styles/scss/utils/helpers';
@@ -17,6 +17,7 @@ html {
 body {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    background-color: $mid-light-grey;
 }
 
 html, body {

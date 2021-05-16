@@ -1,0 +1,15 @@
+@import '../../../../assets/styles/scss/utils/variables';
+
+.breadcrumb {
+  background-color: transparent;
+  .breadcrumb-item {
+      font-size: 1.4rem;
+      font-weight: 400;
+      &.active {
+        color: $mid-dark-grey;
+      }
+      a {
+        color: $main-turquoise;
+      }
+  }
+}
