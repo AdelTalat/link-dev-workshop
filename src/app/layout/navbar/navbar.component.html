@@ -1,6 +1,6 @@
-<nav class="main-navbar navbar navbar-expand-lg fixed-top" (scroll)="runOnScroll($event)">
+<nav class="main-navbar navbar navbar-expand-lg fixed-top">
     <div class="container">
-        <button class="btn btn-link" >
+        <button class="btn btn-link" (click)="toggleSidebar()">
             <img src="../../../assets/images/menu-icon.svg" alt="menu-button" />
         </button>
         <a class="navbar-brand ml-5" href="#">
@@ -43,3 +43,5 @@
         </div>
     </div>
 </nav>
+
+<app-side-nav *ngIf="toggleSideBar"></app-side-nav>

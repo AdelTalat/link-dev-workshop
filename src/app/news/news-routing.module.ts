@@ -8,7 +8,7 @@ const routes: Routes = [
                 { path: '',
                   component: NewsListingComponent
                 },
-                { path: '/:id',
+                { path: ':id',
                   component: DetailsPageComponent
                 }
               ];

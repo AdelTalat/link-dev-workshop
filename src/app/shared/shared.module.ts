@@ -6,7 +6,6 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 const sharedComponents = [
@@ -21,7 +20,6 @@ const sharedComponents = [
     CommonModule,
     CarouselModule.forRoot(),
     RouterModule,
-    FormsModule,
     HttpClientModule
   ],
   exports: [...sharedComponents, CarouselModule, BsDatepickerModule]

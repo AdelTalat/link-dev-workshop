@@ -1,4 +1,5 @@
-<div class="news-card-wrapper card mb-5">
+<div class="news-card-wrapper card mb-5" [routerLink]="['/news', article?.id]"
+[queryParams]="{ categoryId: article.sourceID }">
   <img [src]="cardInfo.urlToImage" onerror="this.src='../../../../assets/images/carousel/carousel-1.jpg'" class="news-card-wrapper__img card-img-top" alt="news-img">
   <div class="news-card-wrapper__body card-body d-flex justify-content-between flex-column">
       <div class="news-card-wrapper__body__actions d-flex justify-content-end my-4">

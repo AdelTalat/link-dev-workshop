@@ -10,6 +10,7 @@ import { NewsListingComponent } from './views/news-listing/news-listing.componen
 import { DetailsPageComponent } from './views/details-page/details-page.component';
 import { SharedModule } from '../shared/shared.module';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     NewsRoutingModule,
     SharedModule,
     BsDatepickerModule.forRoot(),
+    NgSelectModule,
   ]
 })
 export class NewsModule { }

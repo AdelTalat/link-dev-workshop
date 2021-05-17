@@ -1,1 +1,55 @@
-<p>side-nav works!</p>
+<aside>
+    <div class="container-fluid h-100 overflow-auto">
+        <div class="row h-100">
+            <div class="col-2 h-100 d-flex align-items-end justify-content-center">
+                <ul class="social-wrapper list-unstyled">
+                    <li class="mb-4">
+                        <i class="twiiter"></i>
+                    </li>
+                    <li class="mb-4">
+                        <i class="facebook"></i>
+                    </li>
+                    <li class="mb-4">
+                        <i class="linked-in"></i>                                                                                    
+                    </li>
+                    <li class="mb-4">
+                        <i class="youtube"></i>     
+                    </li>
+                    <li>
+                        <i class="instagram"></i>                                                 
+                    </li>
+                </ul>
+            </div>
+            <div class="col-10 h-100 d-flex flex-column justify-content-between">
+                <ul class="sidebar-links top-sidebar-wrapper list-unstyled mt-4">
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <a href="#">About us</a>
+                        <ul class="top-sidebar-seconde-level list-unstyled">
+                            <li><a href="#">Who are us</a></li>
+                            <li><a href="#">Why us?</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" [routerLink]="['/news']" routerLinkActive="router-link-active" >News</a>
+                        <ul class="top-sidebar-seconde-level list-unstyled">
+                            <li><a href="#" [routerLink]="['/news']">News</a></li>
+                            <li><a href="#">Events</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Careers</a>
+                        <ul class="top-sidebar-seconde-level list-unstyled">
+                            <li><a href="#">Opportunities</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="sidebar-links bottom-sidebar-wrapper list-unstyled mb-2">
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Site Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</aside>

@@ -1,0 +1,64 @@
+aside {
+    height: calc(100vh -50);
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 70%;
+    background: #038896;
+    border-top: 2px solid #ccc;
+    z-index: 100;
+    width: 670px;
+    .social-wrapper {
+        .twiiter {
+            content: url('../../../assets/images/icons/twitter-icon.svg');
+            filter: brightness(0) invert(1);
+        }
+        .facebook {
+            content: url('../../../assets/images/icons/facebook-icon.svg');
+            filter: brightness(0) invert(1);
+        }
+        .linked-in {
+            content: url('../../../assets/images/icons/linkedin-icon.svg');
+            filter: brightness(0) invert(1);
+        }
+        .youtube {
+            content: url('../../../assets/images/icons/youtube-icon.svg');
+            filter: brightness(0) invert(1);
+        }
+        .instagram {
+            content: url('../../../assets/images/icons/instagram-icon.svg');
+            filter: brightness(0) invert(1);
+        }
+    }
+    .sidebar-links {
+        > li {
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+            .top-sidebar-seconde-level {
+                li {
+                    a {
+                        font-size: 19px;
+                        font-weight: 400;
+                        color: #efefef;
+                        opacity: 0.6;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            > a {
+                font-size: 32px;
+                font-weight: 600;
+                color: #fff;
+                transition: 0.3s ease-in-out;
+                &:hover {
+                    text-decoration: none;
+                    color: #8dc043;
+                }
+            }
+        }
+    }
+}
