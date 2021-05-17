@@ -1,29 +1,25 @@
-<form>
-  <div class="form-row">
-    <div class="col-xs-12 col-12 col-md-3 form-group">
-      <label for="fromDate">From</label>
-      <input id="fromDate" placeholder="Datepicker" class="form-control" bsDatepicker>
-    </div>
-    <div class="col-xs-12 col-12 col-md-3 form-group">
-      <label for="toDate">To</label>
-      <input id="toDate" placeholder="Daterangepicker" class="form-control" bsDatepicker>
-    </div>
-    <div class="col-xs-12 col-12 col-md-3 form-group">
-      <label>Category</label>
-      <ng-select
-        [items]="categories"
-        bindLabel="name"
-        bindValue="id"
-        name="category"
-        (change)="onFilterWithCategory()"
-        [(ngModel)]="selectedCategoryId"
-      > 
-      </ng-select>
-    </div>
-    <div class="col-xs-12 col-12 col-md-3 form-group">
-      <label for="inputPassword4">Password</label>
-      <input type="password" class="form-control" id="inputPassword4">
-    </div>
-
+<div class="form-row">
+  <div class="col-xs-12 col-12 col-md-6 col-lg-2">
+    <label for="fromDate">From</label>
+    <input id="fromDate" placeholder="select" class="form-control" bsDatepicker autocomplete="off">
   </div>
-</form>
+  <div class="col-xs-12 col-12 col-md-6 col-lg-2">
+    <label for="toDate">To</label>
+    <input id="toDate" placeholder="select" class="form-control" bsDatepicker autocomplete="off">
+  </div>
+  <div class="col-xs-12 col-12 col-md-4 col-lg-2">
+    <label>Category</label>
+    <ng-select [items]="categories" bindLabel="name" bindValue="id" name="category" placeholder="select"
+      (change)="onFilterWithCategory()" [(ngModel)]="selectedCategoryId" autocomplete="off" labelForId="categories">
+    </ng-select>
+  </div>
+  <div class="col-xs-12 mt-4 mt-sm-4 col-12 col-md-4 col-lg-3 d-flex align-items-end">
+    <input (input)="onSearch(query.value)" type="text" #query class="form-control" placeholder="search services" />
+  </div>
+  <div class="col-xs-12 mt-4 mt-sm-4 col-12 col-md-4 col-lg-3 d-flex align-items-end">
+    <button class="btn btn-block btn-outline-green pb-3 pt-4 font-weight-bold" (click)="onSort()">
+      Sort by <img src="../../../../assets/images/icons/sort-icon.svg" alt="sort-icon" />
+    </button>
+  </div>
+
+</div>

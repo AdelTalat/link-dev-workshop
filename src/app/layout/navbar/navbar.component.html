@@ -1,9 +1,9 @@
 <nav class="main-navbar navbar navbar-expand-lg fixed-top">
-    <div class="container">
+    <div class="container-fluid">
         <button class="btn btn-link" (click)="toggleSidebar()">
             <img src="../../../assets/images/menu-icon.svg" alt="menu-button" />
         </button>
-        <a class="navbar-brand ml-5" href="#">
+        <a class="navbar-brand ml-5 mr-auto" href="#">
             <img src="../../../assets/images/logo.png" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,11 +32,9 @@
               <button class="nav-link dropdown-toggle btn btn-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img src="../../../assets/images/settings-icon.svg" class="main-navbar__nav-icon" alt="settings-icon" />
               </button>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-left" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Language</a>
+                <a class="dropdown-item" href="#">Font Size action</a>
               </div>
             </li>
           </ul>

@@ -22,3 +22,9 @@
         background-color: $mid-light-grey;
     }
 }
+
+.dropdown-toggle {
+  &::after {
+      display: none;
+  }
+}

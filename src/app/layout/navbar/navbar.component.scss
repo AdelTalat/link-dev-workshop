@@ -3,6 +3,7 @@
 .main-navbar {
     background-color: $main-turquoise;
     padding: 2.74rem 1rem;
+    z-index: 1100;
     .navbar-nav {
         .nav-item {
             .nav-link {

@@ -2,5 +2,8 @@
     &__view-all {
         font-size: 2rem;
         font-weight: 400;
+        @media (max-width: 575.98px) {
+          font-size: 1.4rem;
+        }
     }
 }

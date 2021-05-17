@@ -1,7 +1,13 @@
 .header-wrapper {
-    margin: 2.5rem 0;
-    &__heading {
-        font-size: 6rem;
-        font-weight: 600;
+  margin: 1rem 0;
+  &__heading {
+    font-size: 6rem;
+    font-weight: 600;
+    @media (max-width: 991.98px) {
+      font-size: 3rem;
     }
+    @media (max-width: 575.98px) {
+      font-size: 2rem;
+    }
+  }
 }

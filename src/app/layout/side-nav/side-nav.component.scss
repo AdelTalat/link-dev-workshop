@@ -1,3 +1,4 @@
+@import '../../../assets/styles/scss/utils/variables';
 aside {
     height: calc(100vh -50);
     position: fixed;
@@ -61,4 +62,10 @@ aside {
             }
         }
     }
+    .user-name {
+      color: $white;
+      margin-left: 1rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+  }
 }

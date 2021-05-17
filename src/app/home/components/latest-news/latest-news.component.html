@@ -1,5 +1,5 @@
 <div class="latest-news-wrapper">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col">
                 <header class="header-wrapper">
@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-4" *ngFor="let article of articles | slice:0:6">
+            <div class="col-12 col-sm-6 col-lg-4" *ngFor="let article of articles | slice:0:6">
                 <app-news-card [article]='article'></app-news-card>
             </div>
         </div>

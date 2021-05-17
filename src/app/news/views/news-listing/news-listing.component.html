@@ -1,7 +1,7 @@
 <app-breadcrumb></app-breadcrumb>
 
 <div class="latest-news-wrapper">
-  <div class="container">
+  <div class="container-fluid">
       <div class="row">
           <div class="col">
               <header class="header-wrapper mt-1">
@@ -9,9 +9,9 @@
               </header>
           </div>
       </div>
-      <app-search></app-search>
-      <div class="row">
-          <div class="col-4" *ngFor="let article of articles">
+      <app-search (filterItem)="filterWithCategory($event)" (searchQuery)="filter($event)" (sortFlag)="sort($event)"></app-search>
+      <div class="row mt-5">
+          <div class="col-12 col-sm-6 col-lg-4" *ngFor="let article of filteredArticles">
               <app-news-card [article]='article'></app-news-card>
           </div>
       </div>

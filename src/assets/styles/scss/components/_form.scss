@@ -16,3 +16,24 @@
   color: rgba($color: #000, $alpha: 0.5);
   font-size: 1.4rem;
 }
+
+label {
+  font-size: 1.6rem;
+  color: $dark-grey;
+  font-weight: 500;
+}
+
+
+.ng-select {
+  &.ng-select-single {
+    .ng-select-container {
+      height: 48px;
+      .ng-value-container {
+        .ng-value, .ng-placeholder {
+          color: rgba($color: #000, $alpha: 0.5);
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}

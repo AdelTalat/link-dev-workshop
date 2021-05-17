@@ -10,7 +10,7 @@
   }
 }
 //blue white
-@mixin button-outline($bg-color, $color) { 
+@mixin button-outline($bg-color, $color) {
   border: 1px solid $bg-color !important;
   background-color:$color;
   color: $bg-color !important;
@@ -19,5 +19,8 @@
     background-color: $bg-color;
     color: $color !important;
     border: 1px solid $bg-color !important;
+    img {
+      filter: brightness(0) invert(1);
+    }
   }
 }
