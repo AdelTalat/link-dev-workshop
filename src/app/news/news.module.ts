@@ -11,6 +11,7 @@ import { DetailsPageComponent } from './views/details-page/details-page.componen
 import { SharedModule } from '../shared/shared.module';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -28,6 +29,8 @@ import { NgSelectModule } from '@ng-select/ng-select';
     SharedModule,
     BsDatepickerModule.forRoot(),
     NgSelectModule,
+    FormsModule,
+    ReactiveFormsModule,
   ]
 })
 export class NewsModule { }
